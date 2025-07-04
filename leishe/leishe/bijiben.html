@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap5.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap5.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #bijiben {
+            background-color: #111111;
+        }
+
+        #bijiben h1 {
+            color: #0f0;
+        }
+
+        #oooo .col-md-4 {
+            background-color: #292929;
+            margin: 15px 30px 15px 30px;
+            width: 315px;
+            height: 250px;
+        }
+
+        #kkkk {
+            height: 580px;
+            background-image: url(./image/notebook/4.jpg);
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+
+        .row h4 {
+            font-size: 14px;
+            color: white;
+        }
+
+        #llll {
+            height: 580px;
+            background-image: url(./image/notebook/5.jpg);
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+
+        #gggg {
+            height: 580px;
+            background-image: url(./image/notebook/6.jpg);
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+
+        #ffff {
+            height: 580px;
+            background-image: url(./image/notebook/7.jpg);
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+
+        .text-center h5 {
+            font-size: 14px;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        .modal-content {
+            background-color: #111111;
+        }
+
+        #myModal * {
+            color: #00FF00;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: #111111;">
+    <nav class="navbar navbar-expand-md  navbar-dark " style="background-color: #111111;" id="nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="./image/logo.png" alt=""
+                    style="height: 50px;width: 50px;"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bijiben.html" style="color: #00FF00;">笔记本</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jianpan.html">游戏键盘</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shubiao.html">游戏鼠标</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jishu.html">技术支持</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#" data-bs-target="#myModal">后台</a> -->
+                        <a class="btn btn-primary" data-bs-toggle="modal"
+                            style="background-color: #00FF00 !important;border: none;" data-bs-target="#myModal">
+                            后台
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 模态框 -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">小蛇后台登录</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- 模态框内容 -->
+                <div class="modal-body">
+                    账号：<input type="text" placeholder="请输入账号" name="" id="user">
+                    密码：<input type="password" placeholder="请输入密码" name="" id="pass">
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-danger"
+                        style="background-color: #00FF00;border: none;color: white !important;" id="login">登录</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="bijiben" style="margin-top: 100px;">
+        <div class="row">
+            <div id="col-md-12">
+                <h1 class="text-center">游戏笔记本和桌面设备</h1>
+                <h4 class="text-center" style="color: #888888;font-size: 14px;">
+                    了解全系列的雷蛇灵刃游戏本，以满足您的工作和游戏需要。通过搭载全新技术的系统和优秀的屏幕<br>体验最好的图形性能。</h4>
+            </div>
+        </div>
+        <div class="row" style="background-color: #222222;">
+            <div class="container" id="oooo" style="padding: 10px;box-sizing: border-box;">
+                <h3 class="text-center" style="color: white;font-size: 16px;">了解雷蛇灵刃系列笔记本</h3>
+                <div class="row" style="justify-content: center;">
+                    <div class="col-md-4 text-center ">
+                        <a href="#" style="text-decoration: none;">
+                            <img src="image/notebook/1.png" style="width: 170px;margin-top: 28px;margin-bottom: 20px;">
+                            <h4 class="text-center" style="color: white;">雷蛇灵刃13潜行版</h4>
+                            <h5 style="color: #FFFFFF;">轻薄便携生产力工具</h5>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="#" style="text-decoration: none;">
+                            <img src="image/notebook/3.png" style="width: 230px;">
+                            <h4 class="text-center" style="color: white;">雷蛇灵刃15</h4>
+                            <h5 style="color: #FFFFFF;">轻便而强悍的游戏本</h5>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="#" style="text-decoration: none;">
+                            <img src="image/notebook/2.png" style="width: 230px;">
+                            <h4 class="text-center" style="color: white;">雷蛇灵刃17专业版</h4>
+                            <h5 style="color: #FFFFFF;">为极客性能而生</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="kkkk">
+            <div class="col-md-offset-4 text-center">
+                <h3 style="color: white;margin-top:80px;" class="text-center">雷蛇灵刃13潜行版</h3>
+                <h4 style="color: #FFFFFF;">全球首款配备GTX 显卡的游戏超极本</h4>
+                <h4 style="color: #FFFFFF;line-height:30px">新一代雷蛇灵刃13潜行竞技版配备了NVIDIA<br>® GeForce® GTX
+                    1650显卡，是真正拥有真<br>实游戏体验与内容创作性能的轻薄超极本。<br>同时搭载第十代英特尔® 酷睿™ i7处理器、<br>显示效果惊艳的屏幕与Razer Chroma™
+                    <br>RGB幻彩灯效键盘，让你尽情畅玩你<br>所喜爱的高画质游戏。
+                </h4>
+                <a href="lingren13.html" style="color: #0f0;">了解更多></a>
+            </div>
+        </div>
+        <div class="row" id="llll">
+            <div class="col-md-7 text-center">
+                <h3 style="color: white;margin-top:80px;" class="text-center">雷蛇灵刃15</h3>
+                <h4 style="color: #FFFFFF;">极速. 灵动. 强劲非凡.</h4>
+                <h4 style="color: #FFFFFF;line-height:30px">
+                    雷蛇灵刃15精英版是全球首款搭载了光轴<br>键盘的游戏笔记本，提供了惊人的准确性<br>速度和舒适的触感反馈。精英版所有机型<br>均配备了最新第九代英特尔® 酷睿™六核<br>
+                    处理器以及NVIDIA® GeForceRTX™显卡<br>除了强悍的性能，更有多种颜色可供挑选<br>——雷蛇灵刃现提供粉晶、水银以及黑色<br>三种配色</h4>
+                <a href="lingren15.html" style="color: #0f0;">了解更多></a>
+            </div>
+        </div>
+        <div class="row" id="gggg">
+            <div class="col-md-offset-4 text-center">
+                <h3 style="color: white;margin-top:80px;" class="text-center">雷蛇灵刃17专业版</h3>
+                <h4 style="color: #FFFFFF;">追求极致的性能</h4>
+                <h4 style="color: #FFFFFF;line-height:30px">雷蛇灵刃17专业版
+                    正在超越自身极限，它的占地面积<br>比前一代小了近25%，屏幕刷新率更高，在路上玩游戏<br>比以往任何时候都更容易。雷蛇灵刃17专业版配备了最<br>新的第9代Intel®Core™i7-9750H处理器和NVIDIA®Ge<br>Force
+                    RTX™系列显卡，带来了桌面级游戏性能，窄边<br>框使其仍然并具有不错的移动性，可以在灵感迸发时，<br>在任何地方进行创作。
+                </h4>
+                <a href="lingren17.html" style="color: #0f0;">了解更多></a>
+            </div>
+        </div>
+        <div class="row" id="ffff">
+            <div class="col-md-7 text-center">
+                <h3 style="color: white;margin-top:80px;" class="text-center">雷蛇灵刃15工作室版</h3>
+                <h4 style="color: #FFFFFF;">影像. 创意. 灵感.</h4>
+                <h4 style="color: #FFFFFF;line-height:30px">
+                    雷蛇灵刃工作室版专为创意人士设计。<br>优化显存的NVIDIA RTX Quadro专业显<br>卡大幅减少渲染和高分辨率视频编辑时<br>间，为创意人士提供了可随时使用的移<br>
+                    动图形工作站。英特尔第九代酷睿六核<br>处理器能够充分利用多核优势进一步加<br>速处理时间。</h4>
+                <a href="lingren15.html" style="color: #0f0;">了解更多></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="p-2 text-dark text-center" style="background-color: #111111;">
+        <div class="container">
+            <p class="lead" style="color: #00FF00;font-size: 12px;">始于玩家 赋予玩家™ 关于RAZER | 投资者联系 | 隐私政策</p>
+            <p class="lead" style="font-size: 12px;color: #c2c2c2;">Copyright © 2023年7月 </p>
+        </div>
+    </footer>
+    <!-- 返回顶部按钮 -->
+    <div>
+        <a href="#nav">
+            <img id="up" src="./image/up.png" alt="">
+        </a>
+    </div>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

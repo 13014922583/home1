@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap5.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap5.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <style>
+        body {
+            background: black;
+        }
+
+        #jianpan h5 {
+            color: #0f0;
+        }
+
+        #jianpan p {
+            color: white;
+        }
+
+        #jianpan .row {
+            border-bottom: rgb(59, 59, 59) solid 1px;
+        }
+
+        a {
+            /* 去掉a标签默认样式 */
+            text-decoration: none;
+        }
+
+        .modal-content {
+            background-color: #111111;
+        }
+
+        #myModal * {
+            color: #00FF00;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md  navbar-dark " style="background-color: #111111;" id="nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img src="./image/logo.png" alt=""
+                    style="height: 50px;width: 50px;"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="bijiben.html">笔记本</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jianpan.html" style="color: #00FF00;">游戏键盘</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shubiao.html">游戏鼠标</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jishu.html">技术支持</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#" data-bs-target="#myModal">后台</a> -->
+                        <a class="btn btn-primary" data-bs-toggle="modal"
+                            style="background-color: #00FF00 !important;border: none;" data-bs-target="#myModal">
+                            后台
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 模态框 -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">小蛇后台登录</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- 模态框内容 -->
+                <div class="modal-body">
+                    账号：<input type="text" placeholder="请输入账号" name="" id="user">
+                    密码：<input type="password" placeholder="请输入密码" name="" id="pass">
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-danger"
+                        style="background-color: #00FF00;border: none;color: white !important;" id="login">登录</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container text-center" id="jianpan" style="margin-top: 100px;">
+        <h3 style="color: #e6e6e6;">游戏键盘</h3>
+        <br>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/1.jpg" alt="">
+                    <h5>Razer Anansi</h5>
+                    <p>安纳西梵蛛</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/2.jpg" alt="">
+                    <h5>Razer BlackWidow 2013</h5>
+                    <p>黑寡妇蜘蛛2013</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/3.jpg" alt="">
+                    <h5>Razer BlackWidow 2019</h5>
+                    <p>雷蛇黑寡妇蜘蛛</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/4.jpg" alt="">
+                    <h5>Razer BlackWidow</h5>
+                    <p>黑寡妇蜘蛛</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/5.jpg" alt="">
+                    <h5>Razer BlackWidow Elite</h5>
+                    <p>雷蛇黑寡妇蜘蛛精英版</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/6.jpg" alt="">
+                    <h5>Razer BlackWidow Essential</h5>
+                    <p>雷蛇黑寡妇蜘蛛标准版</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/7.jpg" alt="">
+                    <h5>Razer BlackWidow Lite</h5>
+                    <p>雷蛇黑寡妇蜘蛛轻装版</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <img src="./image/jianpan/8.jpg" alt="">
+                <h5>Razer BlackWidow Stealth</h5>
+                <p>黑寡妇蜘蛛潜行版</p>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/9.jpg" alt="">
+                    <h5>Razer BlackWidow TE 2013</h5>
+                    <p>黑寡妇蜘蛛竞技版2013</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/10.jpg" alt="">
+                    <h5>Razer BlackWidow TE Stealth</h5>
+                    <p>黑寡妇蜘蛛竞技潜行版</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/11.jpg" alt="">
+                    <h5>Razer BlackWidow Tournament Edition</h5>
+                    <p>黑寡妇蜘蛛竞技版</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/12.jpg" alt="">
+                    <h5>Razer BlackWidow Tournament Edition Chroma</h5>
+                    <p>黑寡妇蜘蛛竞技幻彩版</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/1.jpg" alt="">
+                    <h5>Razer BlackWidow Tournament Edition Chroma V2</h5>
+                    <p>黑寡妇蜘蛛竞技幻彩版 V2</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/13.jpg" alt="">
+                    <h5>Razer BlackWidow Ultimate 2013</h5>
+                    <p>黑寡妇蜘蛛终极版 2013</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/3.jpg" alt="">
+                    <h5>Razer BlackWidow Ultimate 2014</h5>
+                    <p>黑寡妇蜘蛛终极版2014</p>
+                </a>
+            </div>
+        </div>
+        <div class="row" style="border: none;">
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/14.jpg" alt="">
+                    <h5>Razer Tartarus Chroma</h5>
+                    <p>塔洛斯魔蝎幻彩版</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/15.jpg" alt="">
+                    <h5>Razer Tartarus Pro</h5>
+                    <p>雷蛇塔洛斯魔蝎专业版</p>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="#">
+                    <img src="./image/jianpan/16.jpg" alt="">
+                    <h5>Razer Tartarus V2</h5>
+                    <p>塔洛斯魔蝎V2</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="p-2 text-dark text-center" style="background-color: #111111;">
+        <div class="container">
+            <p class="lead" style="color: #00FF00;font-size: 12px;">始于玩家 赋予玩家™ 关于RAZER | 投资者联系 | 隐私政策</p>
+            <p class="lead" style="font-size: 12px;color: #c2c2c2;">Copyright © 2023年7月 </p>
+        </div>
+    </footer>
+    <!-- 返回顶部按钮 -->
+    <div>
+        <a href="#nav">
+            <img id="up" src="./image/up.png" alt="">
+        </a>
+    </div>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

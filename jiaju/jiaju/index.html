@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>家居网</title>
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<style>
+	#img111 {
+		position: fixed;
+		right: 1%;
+		top: 90%;
+	}
+
+	#img111 img {
+		height: 100%;
+		width: 30px;
+	}
+</style>
+
+<body>
+	<div id="img111" style="display: none;">
+		<a href="#up">
+			<img src="./img/返回顶部.png" alt="">
+		</a>
+	</div>
+	<header class="header" id="up">
+		<div style="position: absolute;right: 1%;top: 1%;cursor: pointer;" id="test">
+			<div style="height: 4px;width: 30px;background-color: #8AB2FC;margin: 5px;"> </div>
+			<div style="height: 4px;width: 30px;background-color: #8AB2FC;margin: 5px;"> </div>
+			<div style="height: 4px;width: 30px;background-color: #8AB2FC;margin: 5px;"> </div>
+		</div>
+		<ul class="header_bg">
+			<a href="index.html"><img src="./img/logo.png" class="logo_img"></a>
+			<li>
+				<a href="#fl">分类</a>
+				<div></div>
+			</li>
+			<li>
+				<a href="#cptj">产品推荐</a>
+				<div></div>
+			</li>
+			<li>
+				<a href="#dingzhi">全屋定制</a>
+				<div></div>
+			</li>
+			<li>
+				<a href="#anli">装修案例</a>
+				<div></div>
+			</li>
+		</ul>
+	</header>
+	<!-- 幻灯片 -->
+	<section id="box" onclick="aa()">
+		<ul>
+			<li><img src="./img/swiper1.jpg">
+				<p>&copy; 移动互联网应用开发技术 作业</p>
+			</li>
+			<li><img src="./img/swiper2.jpg">
+				<p>&copy; 移动互联网应用开发技术 作业</p>
+			</li>
+			<li><img src="./img/swiper1.jpg">
+				<p>&copy; 移动互联网应用开发技术 作业</p>
+			</li>
+			<li><img src="./img/swiper2.jpg">
+				<p>&copy; 移动互联网应用开发技术 作业</p>
+			</li>
+			<li><img src="./img/swiper1.jpg">
+				<p>&copy; 移动互联网应用开发技术 作业</p>
+			</li>
+			<li><img src="./img/swiper2.jpg">
+				<p>&copy; 移动互联网应用开发技术 作业</p>
+			</li>
+		</ul>
+	</section>
+	<br>
+	<!-- fenlei -->
+	<div id="fl">
+		<div id="chanpintuijian" onclick="aa()">
+			<ul>
+				<div style="display: flex;align-items: center;justify-content: center;">
+					<div style="height: 2px;width: 160px;background-color: #666666;">
+					</div>
+					<h2>&nbsp; &nbsp;&nbsp;分类&nbsp;&nbsp;&nbsp; </h2>
+					<div style="height: 2px;width: 160px;background-color: #666666;"></div>
+				</div>
+				<h3 style="color: #5e5e5e;font-weight: 100;margin-top: 2px">好物集结，发现你的专属好物</h3>
+				<br>
+				<!-- 产品推荐内容 -->
+				<div class="chanpintuijian">
+					<div class="chanpintuijian_content">
+						<div class="chanpintuijian_left">
+							<img src="./img/cptj_1.png" alt="">
+						</div>
+						<div class="chanpintuijian_right">
+							<img src="./img/cptj_2.png" alt="">
+							<img src="./img/cptj_3.png" alt="">
+						</div>
+					</div>
+				</div>
+				<br>
+				<div
+					style="cursor: pointer;;color:#C21B22;font-size: 20px;border: #C21B22 3px solid;border-radius: 10px;padding: 10px;margin: 10px;">
+					More></div>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<br>
+	<!-- fenlei -->
+	<div id="cptj" onclick="aa()">
+		<div id="fenlei">
+			<ul>
+				<div style="display: flex;align-items: center;justify-content: center;">
+					<div style="height: 2px;width: 160px;background-color: #666666;">
+					</div>
+					<h2>&nbsp; &nbsp;&nbsp;产品推荐&nbsp;&nbsp;&nbsp; </h2>
+					<div style="height: 2px;width: 160px;background-color: #666666;"></div>
+				</div>
+				<h3 style="color: #5e5e5e;font-weight: 100;margin-top: 2px">焕新选择，打造与您契合的新风格</h3>
+				<br>
+				<!-- 分类内容 -->
+				<div class="fenlei">
+					<div class="fenlei_item">
+						<div class="fenlei_item_top">
+							<img src="./img/fl_1.png" class="fenlei_item_big" alt="">
+							<img src="./img/fl_2.png" class="fenlei_item_big" alt="">
+						</div>
+						<div class="fenlei_item_bottom">
+							<img src="./img/fl_3.png" class="fenlei_item_big" alt="">
+							<img src="./img/fl_4.png" class="fenlei_item_small" alt="">
+							<img src="./img/fl_5.png" class="fenlei_item_small" alt="">
+						</div>
+					</div>
+					<div class="fenlei_item">
+						<img src="./img/fl_6.png" alt="" class="datupian">
+					</div>
+				</div>
+				<br>
+				<div
+					style="cursor: pointer;;color:#C21B22;font-size: 20px;border: #C21B22 3px solid;border-radius: 10px;padding: 10px;margin: 10px;">
+					More></div>
+			</ul>
+		</div>
+	</div>
+	<br>
+	<br>
+	<!-- dingzhi -->
+	<div id="dingzhi" onclick="aa()">
+		<ul>
+			<div style="display: flex;align-items: center;justify-content: center;">
+				<div style="height: 2px;width: 160px;background-color: #666666;">
+				</div>
+				<h2>&nbsp; &nbsp;&nbsp;全屋定制&nbsp;&nbsp;&nbsp; </h2>
+				<div style="height: 2px;width: 160px;background-color: #666666;"></div>
+			</div>
+			<h3 style="color: #5e5e5e;font-weight: 100;margin-top: 2px">诠释空间，展示家具设计新灵感</h3>
+			<br>
+			<!-- 全屋定制-->
+			<div class="dingzhi">
+				<div class="dingzhi_top_img">
+					<img src="./img/dz_1.png" class="dz_dingzhi" alt="">
+				</div>
+				<div class="dingzhi">
+					<div class="dingzhi_content">
+						<div class="dingzhi_left">
+							<img src="./img/dz_2.png" style="padding-right: 0px;box-sizing: border-box;" alt="">
+						</div>
+						<div class="dingzhi_right">
+							<img src="./img/dz_3.png" style="width: 100%;padding-bottom: 9px;box-sizing: border-box;"
+								alt="">
+							<img src="./img/dz_4.png" style="width: 100%;padding-top: 9px; box-sizing: border-box;"
+								alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div
+				style="cursor: pointer;;color:#C21B22;font-size: 20px;border: #C21B22 3px solid;border-radius: 10px;padding: 10px;margin: 10px;">
+				More></div>
+		</ul>
+	</div>
+	<br>
+
+
+	<br>
+	<!-- 装修案例 -->
+	<div id="anli" onclick="aa()">
+		<ul>
+			<div style="display: flex;align-items: center;justify-content: center;">
+				<div style="height: 2px;width: 160px;background-color: #666666;">
+				</div>
+				<h2>&nbsp; &nbsp;&nbsp;装修案例&nbsp;&nbsp;&nbsp; </h2>
+				<div style="height: 2px;width: 160px;background-color: #666666;"></div>
+			</div>
+			<h3 style="color: #5e5e5e;font-weight: 100;margin-top: 2px">点缀尺寸之间，打造你的专属户型</h3>
+			<br>
+			<!-- 全屋定制-->
+			<div class="anli">
+				<!-- 外壳 -->
+				<div class="anli_wai">
+					<div class="anli_item">
+						<img src="./img/al_1.png" alt="">
+					</div>
+					<div class="anli_item">
+						<img src="./img/al_2.png" alt="">
+					</div>
+					<div class="anli_item">
+						<img src="./img/al_3.png" alt="">
+					</div>
+					<div class="anli_item">
+						<img src="./img/al_4.png" alt="">
+					</div>
+					<div class="anli_item">
+						<img src="./img/al_5.png" alt="">
+					</div>
+					<div class="anli_item">
+						<img src="./img/al_6.png" alt="">
+					</div>
+				</div>
+			</div>
+			<br>
+			<div
+				style="cursor: pointer;;color:#C21B22;font-size: 20px;border: #C21B22 3px solid;border-radius: 10px;padding: 10px;margin: 10px;">
+				More></div>
+		</ul>
+	</div>
+	<br>
+
+	<!-- 底部 -->
+	<footer id="footer">
+		<p> &copy; 移动互联网应用开发技术 作业</p>
+		<p> </p>
+	</footer>
+	<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		function aa() {
+			location = './erji.html'
+		}
+	</script>
+</body>
+
+</html>

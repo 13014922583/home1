@@ -1,0 +1,42 @@
+.container {
+    background-color: #EDEDED;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.goods {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.goods_item {
+    padding: 30px;
+    box-sizing: border-box;
+    /* width: 25%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.goods_item img {
+    height: 220px;
+    width: 220px;
+}
+
+.info {
+    width: 100%;
+}
+
+.price {
+    color: red;
+    padding: 2px;
+    box-sizing: border-box;
+}
