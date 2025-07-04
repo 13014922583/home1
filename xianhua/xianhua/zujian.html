@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .qwe {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .qwe img {
+            height: 131px;
+            width: 112px;
+            border-radius: 10px;
+            box-shadow: rgb(202, 202, 202) 0 0 5px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+
+        .col-md-12 {
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-success navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">鲜"<span class="text-warning">花</span>"网店</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="erji.html">详情</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">后台管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="erji2.html">用户晒单</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zujian.html">组件使用说明</a>
+                    </li>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success dropdown-toggle"
+                            data-bs-toggle="dropdown">分类</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#aq">爱情鲜花</a></li>
+                            <li><a class="dropdown-item" href="#zb">长辈鲜花</a></li>
+                            <li><a class="dropdown-item" href="#yh">用户晒单</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container" style="margin-bottom: 80px;">
+        <h2>组件使用说明：</h2>
+        <br>
+        <div class="row g-6">
+            <h3>网格系统布局：</h3>
+            <div class="col-md-12">
+                使用了bootstrap5的网格系统，原来是css3的媒体查询，根据屏幕大小的不同自动适应页面内容的大小
+                <br>
+                它一共有12个小格子,在class里面写 例如col-md-1则是定义一块小格子
+                <br>
+                <img src="./img/b1.png" alt="">
+            </div>
+        </div>
+        <br>
+        <div class="row g-6">
+            <h3>轮播：</h3>
+            <div class="col-md-12">
+                bootstrap5的轮播组件，都设置好了，只需更换图片路径即可使用
+                <br>
+                <img src="./img/b2.png" alt="">
+                <img src="./img/b3.png" alt="">
+            </div>
+        </div>
+        <div class="row g-6">
+            <h3>导航栏：</h3>
+            <div class="col-md-12">
+                导航栏一般放在页面的顶部。<br>
+                使用导航栏组件缩小时右上角则会出现一个展开按钮，导航栏的内容则隐藏在里面
+                <br>
+                <img src="./img/b6.png" alt="">
+                <img src="./img/b4.png" alt="">
+            </div>
+        </div>
+        <div class="row g-6">
+            <h3>按钮组件：</h3>
+            <div class="col-md-12">
+                bootstrap5里面内置了许多好看的按钮样式<br>
+                在class里直接添加btn btn-primary样式即可生效
+                <br>
+                <img src="./img/b7.png" alt="">
+            </div>
+        </div>
+    </div>
+    <footer class="p-2 bg-light text-dark text-center" style="position: fixed;bottom: 0;width: 100%;">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2023 bootstrap5 鲜花网店</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>

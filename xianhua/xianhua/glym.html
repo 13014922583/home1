@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .qwe {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .qwe img {
+            height: 131px;
+            width: 112px;
+            border-radius: 10px;
+            box-shadow: rgb(202, 202, 202) 0 0 5px;
+            margin-right: 10px;
+            box-sizing: border-box;
+        }
+
+        .col-md-12 {
+            margin-bottom: 10px;
+        }
+
+        .nav-link:focus,
+        .nav-link:hover {
+            color: red;
+            background-color: #bfd2e2;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  bg-success navbar-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">鲜"<span class="text-warning">花</span>"网店</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="erji.html">详情</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="glym.html">后台管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="erji2.html">用户晒单</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zujian.html">组件使用说明</a>
+                    </li>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-success dropdown-toggle"
+                            data-bs-toggle="dropdown">分类</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#aq">爱情鲜花</a></li>
+                            <li><a class="dropdown-item" href="#zb">长辈鲜花</a></li>
+                            <li><a class="dropdown-item" href="#yh">用户晒单</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <h2>商品管理</h2>
+        <div class="row">
+            <div class="col-md-1" style="background-color: aliceblue;">
+                <nav class="navbar bg-light">
+                    <ul class="navbar-nav" style="width: 100%; background-color: #F0F8FF;">
+                        <li class="nav-item">
+                            <a class="nav-link aaa" href="#">爱情鲜花</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link bbb" href="#">长辈鲜花</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-11 ">
+                <div class="container-fluid" style="margin-bottom: 80px;">
+                    <br>
+                    <br>
+                    <div class="row g-6">
+                        <div class="col-md-12">
+                            <h4 class="ccc">爱情鲜花列表</h4>
+                            <h4 class="ddd" style="display: none;">长辈鲜花列表</h4>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>商品名称</th>
+                                        <th>价格</th>
+                                        <th>图片</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="goods">
+                                    <tr>
+                                        <td>新婚祝福·甜蜜永恒</td>
+                                        <td>99.9</td>
+                                        <td><img style="height: 60px;width: 50px;" src="./img/w1.jpg" alt=""></td>
+                                        <td>
+                                            <button type="button" class="btn btn-primary">编辑</button>
+                                            <button type="button" class="btn btn-danger del">删除</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="p-2 bg-light text-dark text-center" style="position: fixed;bottom: 0;width: 100%;">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2023 bootstrap5 鲜花网店</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                // 使用ajax发出网络请求 请求的url是本地文件的data.json 请求成功返回result
+                url: "./data.json", success: function (result) {
+                    // $("#div1").html(result);
+                    console.log(result)
+                    // 使用一个临时变量 在循环中拼接html代码
+                    let lsbl = ''
+                    // 循环获取到的json数据中 数组
+                    for (let i = 0; i < result.aqxh.length; i++) {
+                        // 把之前写好的html模板 循环添加到临时变量里面 ，使用反引号  ``  里面的动态变量则可使用   ${变量}的形式添加进去，其他的则是字符串
+                        lsbl += `<tr>
+                            <td>${result.aqxh[i].name}</td>
+                            <td>${result.aqxh[i].price}</td>
+                            <td><img style="height: 60px;width: 50px;" src="${result.aqxh[i].img}" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-primary">确定</button>
+                                <button type="button" class="btn btn-danger del">删除</button>
+                            </td>
+                        </tr>`
+                        lsbl += `<tr>
+                            <td>${result.zbxh[i].name}</td>
+                            <td>${result.zbxh[i].price}</td>
+                            <td><img style="height: 60px;width: 50px;" src="${result.zbxh[i].img}" alt=""></td>
+                            <td>
+                                <button type="button" class="btn btn-primary">确定</button>
+                                <button type="button" class="btn btn-danger del" >删除</button>
+                            </td>
+                        </tr>`
+                    }
+                    // 使用jqeury 获取html上节点的 id ；使用jquery的html()方法 把临时变量 拼接好的 代码渲染到页面上， 
+                    $('#goods').html(lsbl)
+
+                    // 获取删除按钮的点击事件，模拟删除弹出
+                    $(".del").click(function () {
+                        confirm
+                        alert('确定删除此商品吗？...')
+                    });
+                }
+            });
+            $('.aaa').click(function () {
+                $('.ccc').show()
+                $('.ddd').hide()
+            })
+            $('.bbb').click(function () {
+                $('.ddd').show()
+                $('.ccc').hide()
+            })
+        });
+    </script>
+</body>
+
+</html>

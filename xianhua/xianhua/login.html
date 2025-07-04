@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			background: #55AA7F;
+		}
+
+		.box {
+			height: 400px;
+			width: 400px;
+			background-color: #292D3E;
+			border-radius: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.box h1 {
+			text-align: center;
+			color: white;
+			margin-top: 60px;
+		}
+
+		.input,
+		.input1 {
+			width: 250px;
+			height: 40px;
+			background-image: linear-gradient(to right, #E71A8B, #0FB3DC);
+			padding: 2px;
+
+			border-radius: 22px;
+			margin: 25px auto;
+
+		}
+
+		.input input,
+		.input1 input {
+			width: 100%;
+			height: 100%;
+			outline: none;
+			border-radius: 22px;
+			border: 0;
+			background-color: #292D3E;
+			text-align: center;
+			color: white;
+		}
+
+		.btn {
+			height: 40px;
+			width: 150px;
+			border: 3px solid;
+			border-color: #1083A2;
+			background-color: #292D3E;
+			border-radius: 22px;
+			color: white;
+			margin-left: 32%;
+			cursor: pointer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<h1>花店后台管理登录</h1>
+		<form>
+
+			<div class="input">
+				<input type="text" id="username" placeholder="username" />
+			</div>
+			<div class="input1">
+				<input type="password" id="password" placeholder="password" />
+			</div>
+			<input type="button" class="btn" value="登录" />
+		</form>
+	</div>
+</body>
+<script>
+	let btn = document.querySelector('.btn')
+
+	btn.onclick = function () {
+		if (document.getElementById('username').value != null && document.getElementById('password').value != null && document.getElementById('username').value != '' && document.getElementById('password').value != '') {
+			window.location.href = './glym.html'
+		} else {
+			alert('请输入账号密码！')
+		}
+	}
+</script>
+
+</html>
